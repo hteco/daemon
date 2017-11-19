@@ -21,7 +21,7 @@ type systemDRecord struct {
 
 // Standard service path for systemD daemons
 func (linux *systemDRecord) servicePath() string {
-	return "/usr/lib/systemd/system/" + linux.name + ".service"
+	return "/etc/systemd/system/" + linux.name + ".service"
 }
 
 // Is a service installed
